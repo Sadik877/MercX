@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercX - Verify Code</title>
+    <style>
+        body {margin:0;background:#0f1923;color:#fff;font-family:Arial;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;}
+        .logo img {width:100px;border-radius:50%;margin-bottom:20px;}
+        h1 {color:#00ff88;}
+        form {background:#001a33;padding:40px;border-radius:20px;text-align:center;width:90%;max-width:400px;}
+        input {width:80%;padding:20px;font-size:32px;letter-spacing:15px;text-align:center;border:none;border-radius:15px;background:#16213e;color:#fff;}
+        button {margin-top:20px;padding:18px 40px;background:#00ff88;color:#000;font-weight:bold;border:none;border-radius:50px;font-size:18px;}
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="/static/logo.png" alt="MercX"></div>
+    <h1>Enter Verification Code</h1>
+    <p>We sent a 6-digit code to your phone</p>
+    <form action="/check" method="POST">
+        <input type="text" name="code" maxlength="6" placeholder="123456" required>
+        <br>
+        <button type="submit">Verify & Continue</button>
+    </form>
+</body>
+</html>

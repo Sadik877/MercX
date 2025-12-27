@@ -1,0 +1,7 @@
+<h3>Users</h3>
+{% for u in users %}
+<p>{{u.username}}
+<a href="/admin/block/{{u.id}}">Block</a>
+<a href="/admin/unblock/{{u.id}}">Unblock</a>
+</p>
+{% endfor %}
