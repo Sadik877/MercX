@@ -90,7 +90,7 @@
       }
     }
 
-    /* Animated Background */
+    /* BACKGROUND */
 
     .bg{
       position:absolute;
@@ -134,15 +134,17 @@
       0%{
         transform:translateY(0px) rotate(0deg);
       }
+
       50%{
         transform:translateY(-30px) rotate(180deg);
       }
+
       100%{
         transform:translateY(0px) rotate(360deg);
       }
     }
 
-    /* Main Card */
+    /* MAIN CARD */
 
     .container{
       position:relative;
@@ -183,9 +185,11 @@
       0%{
         transform:scale(1);
       }
+
       50%{
         transform:scale(1.05);
       }
+
       100%{
         transform:scale(1);
       }
@@ -248,6 +252,26 @@
     .btn:hover{
       transform:translateY(-3px) scale(1.03);
       box-shadow:0 0 30px rgba(0,255,255,0.5);
+    }
+
+    .contact-info{
+      margin-top:25px;
+    }
+
+    .contact-info p{
+      margin:10px 0;
+      font-size:14px;
+      color:#cfcfcf;
+    }
+
+    .contact-info a{
+      color:#00ffff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .contact-info a:hover{
+      text-decoration:underline;
     }
 
     .footer{
@@ -318,6 +342,8 @@
       the platform back online as soon as possible.
     </p>
 
+    <!-- TIMER -->
+
     <div class="timer">
 
       <div class="box">
@@ -342,7 +368,40 @@
 
     </div>
 
-    <a href="#" class="btn">Contact Support</a>
+    <!-- CONTACT BUTTON -->
+
+    <a href="https://wa.me/2347040368632" class="btn" target="_blank">
+      Contact Support
+    </a>
+
+    <!-- CONTACT INFO -->
+
+    <div class="contact-info">
+
+      <p>
+        📱 WhatsApp:
+        <a href="https://wa.me/2347040368632" target="_blank">
+          +2347040368632
+        </a>
+      </p>
+
+      <p>
+        📞 Admin:
+        <a href="tel:+2347040368632">
+          +2347040368632
+        </a>
+      </p>
+
+      <p>
+        📧 Email:
+        <a href="mailto:support@mercx.site">
+          support@mercx.site
+        </a>
+      </p>
+
+    </div>
+
+    <!-- FOOTER -->
 
     <div class="footer">
       © 2026 MERCX.site — All Rights Reserved
@@ -350,7 +409,7 @@
 
   </div>
 
-  <!-- COUNTDOWN -->
+  <!-- COUNTDOWN SCRIPT -->
 
   <script>
 
@@ -394,7 +453,6 @@
       setTimeout(() => {
 
         loader.style.opacity = "0";
-
         loader.style.visibility = "hidden";
 
       }, 2000);
