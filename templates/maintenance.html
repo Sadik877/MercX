@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="google-adsense-account" content="ca-pub-2860475201581700">
+
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- GOOGLE ADSENSE -->
+  <meta name="google-adsense-account" content="ca-pub-2860475201581700">
+
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2860475201581700"
+    crossorigin="anonymous">
+  </script>
+
   <title>MERCX - Maintenance</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -281,6 +291,15 @@
       font-size:13px;
     }
 
+    /* ADS BOX */
+
+    .ads-box{
+      margin:30px 0;
+      padding:10px;
+      background:rgba(255,255,255,0.04);
+      border-radius:15px;
+    }
+
     @media(max-width:600px){
 
       h1{
@@ -303,6 +322,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -366,6 +386,24 @@
         <h2 id="seconds">00</h2>
         <span>Seconds</span>
       </div>
+
+    </div>
+
+    <!-- ADSENSE AD -->
+
+    <div class="ads-box">
+
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2860475201581700"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true">
+      </ins>
+
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
 
     </div>
 
@@ -439,6 +477,8 @@
 
     }
 
+    updateTimer();
+
     setInterval(updateTimer,1000);
 
   </script>
@@ -461,7 +501,6 @@
     });
 
   </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2860475201581700"
-     crossorigin="anonymous"></script>
+
 </body>
 </html>
